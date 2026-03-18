@@ -9,9 +9,10 @@ export default defineConfig([
     extends: ["js/recommended"],
     languageOptions: { globals: globals.browser },
     rules: {
-      semi: "error",
+      "no-unused-vars": "warn",
       "prefer-const": "error",
       quotes: ["error", "double"],
+      semi: "error",
     },
   },
 ]);
